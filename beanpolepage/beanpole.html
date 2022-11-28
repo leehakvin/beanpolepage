@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;
+    1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="icon.png">
+    <title>BEANPOLE-DESIGN</title>
+
+    <style>
+        *{margin: 0; padding: 0; position: relative;}
+        li,ol,ul{list-style: none;}
+        a{color: inherit;  text-decoration: none;}
+        img{display: block;}
+        .section{font-family: 'Roboto', sans-serif; font-family: 'Noto Sans KR', sans-serif;}
+
+        a#topBtn{position: fixed; right: 3%; bottom: 5px; display: none; z-index: 120;
+        width: 50px; height: 35px; border-radius: 5%; text-align: center;padding-top: 15px;
+        margin-bottom: 50px; transition: 0.8s; border: 2px solid #666666; border-radius: 50%;}
+        a#topBtn img{align-items: center; margin-left: 10px;}
+        a#topBtn:hover{transition: 0.8s; opacity: 0.8;}
+
+        .section1,.section2,.section3,.section4{width: 100%; height: 100vh; background-size: cover;}
+        .section1{background-color: brown; background-image: url(img/beanpole.jpg);}
+
+        .section2{background-color: brown; background-image: url(img/beanpole-mokeup.jpg);}
+        .section2 .text-box{padding-left: 75%; padding-top: 5%; padding-right: 4%;}
+        .section2 .text-box .text{}
+        .section2 .text-box h4{font-size: 26px; color: rgb(28, 64, 133);}
+        .section2 .text-box h3{font-size: 26px; color: rgb(28, 64, 133); margin-bottom: 8px;}
+        .section2 .text-box p{font-size: 16px; color: rgba(28, 64, 133, 0.6); line-height: 26px; font-weight: 500;}
+        .section2 .text-box .text1{text-transform: uppercase; margin-bottom: 100px; font-size: 40px; font-weight: 900; color: rgb(28, 64, 133);}
+        .section2 .text-box .text2{margin-bottom: 40px;}
+        .section2 .text-box .text3{margin-bottom: 40px;}
+        .section2 .text-box .text4{}
+
+        .section3{height: 60vh; background-color: rgb(255, 255, 255);}
+        .section3 .container{margin: 100px 100px; margin-left: 16%;}
+        .section3 .left{}
+        .section3 .left .text{}
+        .section3 .container h4{font-size: 26px; color: rgb(28, 64, 133);}
+        .section3 .container h3{font-size: 26px; color: rgb(28, 64, 133);}
+        .section3 .container p{font-size: 18px; color: rgba(28, 64, 133, 0.6); margin-top: 40px;}
+        .section3 .section-title .text1{text-transform: uppercase; font-size: 40px; font-weight: 600; color: rgb(28, 64, 133);}
+        .section3 .down{display: flex; gap: 300px; margin-top: 80px;}
+        .section3 .down .text h3{}
+        .section3 .down .text2{}
+        .section3 .down .text2 .t1{display: flex; justify-content: space-between; gap: 100px;}
+        .section3 .down .text2 .box{width: 60px; height: 60px; background-color: rgb(33, 28, 77); margin-top: 40px;}
+        .section3 .down .text2 .box2{background-color: #666666;}
+        .section3 .down .text2 .box h5{padding-top: 100%; margin-top: 20px; font-size: 15px; font-family: 'Roboto', sans-serif; font-weight: 400;}
+        .section3 .down .text2 .box1 h5{color: rgb(33, 28, 77);}
+        .section3 .down .text2 .box2 h5{color: #666666;}
+        .section3 .down .text3{}
+        .section3 .down .text3 p{margin-top: 60px; font-family: 'Work Sans', sans-serif; font-weight: 600;}
+        .section3 .down .text4{}
+        .section3 .down .text4 .key{display: flex; margin-top: 20px;}
+        .section3 .down .text4 .key p{margin-right: 100px; font-weight: 600;}
+
+        .section4{background-color: brown; background-image: url(img/beanpole-mokeup2.jpg);}
+
+        .section5{background-color: brown; background-image: url(img/beanpole-mokeup3.jpg);
+            width: 100%; height: 210vh;}
+        .section5 .section-title{font-weight: 600; color: rgb(28, 64, 133);
+            margin-left: 16%; padding-top: 120px; text-transform: uppercase;}
+        .section5 .section-title h1{font-size: 60px;}
+        .section5 .section-title h4{font-size: 26px;}
+    </style>
+</head>
+<body>
+    <section class="section section1">
+    </section>
+
+    <section class="section section2">
+        <div class="text-box">
+            <div class="text text1">
+                <h1>no.1</h1>
+                <h4>BRAND STORY</h4>
+            </div>
+            <div class="text text2">
+                <h3>Brand</h3>
+                <p>빈폴 포터리는 포터리가 도자기라는 뜻으로 도예 작업을 수작업으로 진행해 고객들에게 그릇, 접시, 컵, 화병 등 생활 주방용품을 판매하는 곳입니다.</p>
+            </div>
+            <div class="text text3">
+                <h3>Problem</h3>
+                <p>전체적으로 가독성이 떨어지고 정리가 되어있지않았고 사이트 내의 틀이 없어 불편, 주 컬러도 없어 브랜드의 개성이 없었습니다. 
+                    또 로고 또한 필요 이상으로 크고 알아 보기 쉽지 않았습니다.
+                </p>
+            </div>
+            <div class="text text4">
+                <h3>Solution</h3>
+                <p>전체적으로 틀을 잡고 깔끔하고 방문자들에게 편의를 제공하였으며 제품들의 컬러들을 주 컬러로 사용하였으며, 
+                    로고는 폰트의 느낌은 살리되 크기 조정과 가독성을 살렸습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section3">
+        <div class="container">
+            <div class="section-title">
+                <div class="text1">
+                    <h1>no.2</h1>
+                    <h4>STYLE GUIDE</h4>
+                </div>
+            </div>
+            <div class="down">
+                <div class="text text2">
+                    <h3>Color</h3>
+                    <div class="t t1">
+                        <div class="box box1">
+                            <h5>#111111</h5>
+                        </div>
+                        <div class="box box2">
+                            <h5>#666666</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text text3">
+                    <h3>Typography</h3>
+                    <p>Work Sans</p>            
+                </div>
+                <div class="text text4">
+                    <h3>Keyword</h3>
+                    <div class="key">
+                        <p>#편안한</p>           
+                        <p>#깔끔한</p>           
+                        <p>#모던한</p>
+                    </div>       
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section section4"></section>
+
+    <section class="section section5">
+        <div class="section-title">
+            <h1>no.3</h1>
+            <h4>WIRE FRAME</h4>
+        </div>
+    </section>
+
+    <a id="topBtn" href="#"><img src="img/top.png"></a>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script>
+    $(function() {
+	$(window).scroll(function() {
+    if ($(this).scrollTop() > 400) {
+      $('#topBtn').fadeIn();
+    } else {
+      $('#topBtn').fadeOut();
+    }
+  }); // 버튼 클릭시 
+  $("#topBtn").click(function() { 
+  	$('html, body').animate({ scrollTop : 0}, 400);
+  	return false; 
+  }); 
+});
+</script>
+</html>
